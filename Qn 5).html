@@ -1,5 +1,7 @@
 <script type="text/javascript">
-  var principle_account = 1000;
-  var total = 1000*(1+0.02)**5 - 1000;
-  document.write("Total Interest= " + total.toFixed(2));
+  var balance = 1000;
+  for (var i = 1; i<=5; i++) {
+    balance+=balance*(2/100);
+  }
+  document.write((balance-1000).toFixed(2));
 </script>

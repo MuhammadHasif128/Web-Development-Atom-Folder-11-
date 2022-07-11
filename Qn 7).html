@@ -1,11 +1,8 @@
 <script type="text/javascript">
-  var sum = 0;
-        var num;
-        do{
-            num = parseInt(prompt("Enter a number(0 to exit):"));
-            if(num != 0){
-              sum += num;
-            }
-        }   while(num != 0);
-        document.write("Total Sum of Numbers is = "+ sum);
+total = 0;
+  do {
+    var number = parseInt(prompt("Enter a Number and Enter 0 to Exit"));
+    total = total + number;
+  } while (number!=0);
+document.write("sum = " + total);
 </script>
